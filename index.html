@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7f5ef">
+  <meta name="description" content="Connie's photography and moving-image portfolio.">
+  <title>Connie — Photographs &amp; Stories</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar"><a class="wordmark" href="#home" aria-label="Connie home">connie<span>°</span></a><span class="top-note">A collection of people, places &amp; passing moments</span></header>
+  <main>
+    <section class="view active" id="home" aria-labelledby="homeTitle">
+      <div class="introline"><span class="eyebrow">PHOTOGRAPHER · OBSERVER · STORY COLLECTOR</span><span class="hand-note">a little bit of everything, kept close <i>↘</i></span></div>
+      <div class="hero-title"><h1 id="homeTitle">Small moments,<br><em>long afterglow.</em></h1><p>Photographs and stories from near and far.<br>Come in, take a look around.</p></div>
+      <div class="memory-grid">
+        <button class="memory-card card-about" data-go="about"><span class="card-index">01 / ABOUT</span><div class="memory-art sd-about" aria-hidden="true"><span class="sd-notch"></span><span class="sd-face"><i class="sd-chip"></i><i class="sd-band"></i><i class="sd-block"></i></span><span class="sd-slot"></span></div><span class="card-label">About me <b>↗</b></span></button>
+        <button class="memory-card card-street" data-go="street"><span class="card-index">02 / PLACES</span><div class="memory-art sd-street" aria-hidden="true"><span class="sd-notch"></span><span class="sd-face"><i class="sd-chip"></i><i class="sd-band"></i><i class="sd-block"></i></span><span class="sd-slot"></span></div><span class="card-label">Street photography <b>↗</b></span></button>
+        <button class="memory-card card-portraits" data-go="portraits"><span class="card-index">03 / PEOPLE</span><div class="memory-art sd-portraits" aria-hidden="true"><span class="sd-notch"></span><span class="sd-face"><i class="sd-chip"></i><i class="sd-band"></i><i class="sd-block"></i></span><span class="sd-slot"></span></div><span class="card-label">Senior women portraits <b>↗</b></span></button>
+      </div>
+      <div class="home-foot"><span>SCROLL SLOWLY · STAY A WHILE</span><a href="#about" data-go="about">A note about the person behind the camera ↗</a></div>
+    </section>
+
+    <section class="view subpage" id="about" aria-labelledby="aboutTitle">
+      <div class="subnav"><button class="back-button" data-go="home">← HOME</button><span>01 — ABOUT ME</span></div>
+      <div class="about-layout"><div class="about-photo"><div class="about-gallery" id="aboutGallery"></div><span class="photo-caption">little pieces of my everyday</span><svg class="doodle-arrow" viewBox="0 0 140 70" aria-hidden="true"><path d="M4 52 C45 8 78 8 124 30 M111 14l14 17-21 4"/></svg></div><div class="about-copy"><span class="eyebrow">THE PERSON BEHIND THE LENS</span><h1 id="aboutTitle">Hi, I’m <em>Connie.</em></h1><p class="about-lead">A student, photographer, and media content producer who likes to observe the details that are easy to miss.</p><p>I’m drawn to cities, people, and the stories hidden in ordinary moments.</p><div class="about-rule"></div><span class="hand-note">Usually looking twice <i>♡</i></span></div></div>
+    </section>
+
+    <section class="view subpage" id="street" aria-labelledby="streetTitle">
+      <div class="subnav"><button class="back-button" data-go="home">← HOME</button><span>02 — STREET PHOTOGRAPHY</span></div>
+      <div class="section-heading"><div><span class="eyebrow">A PLACE IS A FEELING, TOO</span><h1 id="streetTitle">Postcards from <em>here &amp; there.</em></h1></div><p>Choose a pin to wander through a place.<br>Every marker opens that city’s photographs.</p></div>
+      <div class="map-layout"><div class="map-card"><div class="map-top"><span>FIELD NOTES · SELECT A PLACE</span></div><div class="map-stage" id="mapStage"></div><div class="map-caption" id="mapCaption">Photographed places, placed by latitude &amp; longitude <span>✳</span></div><div class="map-source">MAP OUTLINE: NATURAL EARTH · PUBLIC DOMAIN</div></div><aside class="city-panel"><span class="eyebrow">THE PHOTO ALBUM</span><h2 id="cityTitle">Pick a pin</h2><p id="cityNote">A small collection opens here, one place at a time.</p><div class="city-grid" id="cityGrid"><div class="empty-note">The map is waiting for you <span>←</span></div></div></aside></div>
+    </section>
+
+    <section class="view subpage" id="portraits" aria-labelledby="portraitTitle">
+      <div class="subnav"><button class="back-button" data-go="home">← HOME</button><span>03 — SENIOR WOMEN PORTRAITS</span></div>
+      <div class="portrait-intro"><div><span class="eyebrow">STORIES FROM THE ISLAND</span><h1 id="portraitTitle">Her own kind <em>of beautiful.</em></h1></div><p>Women I met on an island, each with a life of her own.<br>Open a portrait to spend a little more time together.</p></div>
+      <div class="people-list" id="peopleList"></div>
+      <footer class="page-footer"><span>MADE WITH ATTENTION, BY CONNIE</span><a href="#home" data-go="home">BACK TO THE BEGINNING ↑</a></footer>
+    </section>
+  </main>
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Photograph viewer"><button class="lightbox-close" aria-label="Close">×</button><button class="lightbox-prev" aria-label="Previous image">←</button><img alt=""><button class="lightbox-next" aria-label="Next image">→</button><span class="lightbox-count"></span></div>
+  <script src="assets.js"></script><script src="stories.js"></script><script src="world-map.js"></script><script src="script.js"></script>
+</body>
+</html>
+
+
